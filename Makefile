@@ -18,4 +18,4 @@ endif
 
 .PHONY: clean
 clean:
-	rm -rf _out
+	rm -f dist/*.js dist/*.map dist/*.css *.log
