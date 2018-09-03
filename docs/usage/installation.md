@@ -27,7 +27,7 @@ The module's contents mirrors the `dist` folder you see in the Git repository. T
 
 ```javascript
 const express = require('express')
-const pathToSwaggerUi = require('swagger-ui').absolutePath()
+const pathToSwaggerUi = require('swagger-ui-dist').absolutePath()
 
 const app = express()
 
@@ -44,7 +44,7 @@ you could do something like this:
 var SwaggerUIBundle = require('swagger-ui-dist').SwaggerUIBundle
 
 const ui = SwaggerUIBundle({
-    url: "http://petstore.swagger.io/v2/swagger.json",
+    url: "https://petstore.swagger.io/v2/swagger.json",
     dom_id: '#swagger-ui',
     presets: [
       SwaggerUIBundle.presets.apis,
@@ -83,7 +83,7 @@ This will serve Swagger UI at `/swagger` instead of `/`.
 
 ### unpkg
 
-You can embed Swagger-UI's code directly in your HTML by using unkpg's interface:
+You can embed Swagger-UI's code directly in your HTML by using unpkg's interface:
 
 ```html
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
